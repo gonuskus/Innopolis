@@ -46,20 +46,20 @@ def calculate(matrix_data):
     return count_craters
 
 
-def read_file():
+def read_file(name_file):
     data_file = []
-    with open('files/4.txt', 'rt') as f:
+    with open(name_file, 'rt') as f:
         for line in f:
             data_file.append([int(x) for x in line.split()])
     return data_file
 
 
-def check_craters():
-    matrix = read_file()
+def check_craters(name_file):
+    matrix = read_file(name_file)
     craters = calculate(matrix)
     print('craters =', craters)
     return craters
 
 
 temp = []
-check_craters()
+check_craters('files/4.txt')
