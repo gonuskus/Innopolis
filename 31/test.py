@@ -21,3 +21,4 @@ def test_search(browser):
     search_page.search(word)
     result_page = YaRuResultPage(browser)
     assert result_page.link_div_count() > 0
+    
