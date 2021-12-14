@@ -1,0 +1,6 @@
+pytest
+webdriver-manager==3.5.2
+requests
+selenium
+urllib3
+faker
