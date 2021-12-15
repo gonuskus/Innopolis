@@ -24,7 +24,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pytest requests selenium faker
-        pip webdriver-manager==3.5.2
+        pip install webdriver-manager==3.5.2
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: |
