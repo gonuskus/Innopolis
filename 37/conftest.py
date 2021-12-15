@@ -23,14 +23,3 @@ def pytest_addoption(parser):
         default="https://qacoursemoodle.innopolis.university",
         help="enter base_url",
     )
-
-
-@pytest.fixture()
-def login(app, request):
-    if app.get_url() != app.base_url:
-        app.open_main_page()
-    if not app.page.check_auth():
-        login = request.config.getoption("--username")
-        password = request.config.getoption("--password")
-        user_data = UserData(login=login, password=password)
-        app.login.authentication(user_data)
