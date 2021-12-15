@@ -1,7 +1,6 @@
-from models.auth import AuthUserData
 from models.login import UserData
+from models.auth import AuthUserData
 from tools.diction_constant import SUCCESS_REGISTRATION_MSG
-
 
 
 def test_auth_success(app):

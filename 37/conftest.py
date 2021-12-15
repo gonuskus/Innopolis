@@ -1,6 +1,5 @@
-import logging
-
 import pytest
+import logging
 from fixtures.application import Application
 from models.login import UserData
 
@@ -23,18 +22,6 @@ def pytest_addoption(parser):
         action="store",
         default="https://qacoursemoodle.innopolis.university",
         help="enter base_url",
-    ),
-    parser.addoption(
-        "--username",
-        action="store",
-        default="fobiw39468@homedepinst.com",
-        help="enter username",
-    ),
-    parser.addoption(
-        "--password",
-        action="store",
-        default="Password11",
-        help="enter password",
     )
 
 

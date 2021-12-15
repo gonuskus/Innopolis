@@ -7,6 +7,7 @@ class Authorization:
     PASSWORD_INPUT = (By.ID, 'password')
     ERROR_AUTH_TEXT = (By.XPATH, '//*[@class="alert alert-danger"]')
 
+
 class Registration:
     LOGIN_INPUT = (By.ID, 'id_username')
     PASSWORD_INPUT = (By.ID, 'id_password')
@@ -20,4 +21,3 @@ class Registration:
     ERROR_MSG_EMAIL_UPLICATE_TEXT = (By.ID, 'id_error_email')
     ERROR_MSG_USERNAME_TEXT = (By.ID, 'id_error_username')
     ERROR_MSG_PASSWORD_TEXT = (By.ID, 'id_error_password')
-
