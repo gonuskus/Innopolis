@@ -10,4 +10,3 @@ class UserData:
     def random_user():
         fake = faker.Faker()
         return UserData(login=fake.email(), password=fake.password())
-

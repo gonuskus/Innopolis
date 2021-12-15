@@ -1,0 +1,6 @@
+USER_NAME = 'вмвапав tester'
+ERROR_LOGIN = 'Неверный логин или пароль, попробуйте заново.'
+SUCCESS_REGISTRATION_MSG = 'Необходимо подтвердить учетную запись'
+ERROR_MSG_USERNAME_TEXT = '- Не указан логин'
+ERROR_MSG_PASSWORD_TEXT = '- Заполните поле'
+ERROR_MSG_EMAIL_TEXT = '- Заполните поле'
