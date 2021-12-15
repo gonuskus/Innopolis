@@ -23,8 +23,10 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest
+        pip install pytest requests selenium faker
+        pip webdriver-manager==3.5.2
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
+      uses: ./37
       run: |
         pytest
